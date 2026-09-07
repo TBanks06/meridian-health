@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Department — Meridian Health</title>
+  <meta name="description" content="Department overview, services, specialists and booking at Meridian General Hospital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="department">
+<main id="main">
+
+  <!-- Department hero (rendered by js from ?dept=) -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb" id="crumbs"></nav>
+      <div id="dept-hero"></div>
+    </div>
+  </section>
+
+  <!-- Overview + sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="dept-layout">
+        <div id="dept-main"><!-- rendered: about, services, practical info --></div>
+        <aside id="dept-aside"><!-- rendered: other departments + CTA --></aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialists in this department -->
+  <section class="section section--mist">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">The team</p><h2 class="section-title">Our specialists</h2></div>
+        <a class="btn btn--ghost" href="doctors.html">All doctors →</a>
+      </div>
+      <div class="doctor-grid" id="dept-doctors"><!-- rendered --></div>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section class="section section--pine visit-band">
+    <div class="container">
+      <h2 class="section-title">Ready when you are.</h2>
+      <p>Same-day slots until noon, seven days a week. Free cancellation until your slot starts.</p>
+      <button class="btn btn--clay btn--lg" data-open-booking>Book an appointment</button>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

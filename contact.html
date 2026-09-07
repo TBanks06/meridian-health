@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit & Contact — Meridian Health</title>
+  <meta name="description" content="Harborline Campus hours, map, parking and contact form for Meridian General Hospital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="contact">
+<main id="main">
+
+  <!-- Emergency strip -->
+  <div class="em-banner">⛑ In an emergency, don’t book — call <a href="tel:+18005550911">1-800-555-0911</a>. Ambulance dispatch in under 90 seconds.</div>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <b>Visit & contact</b></nav>
+      <p class="eyebrow eyebrow--mint">Harborline Campus</p>
+      <h1>Come see us.</h1>
+      <p class="ph-lede">14 Harborline Avenue, Portside District. Free valet, 600 parking bays with EV chargers, step-free access throughout, metro four minutes on foot.</p>
+    </div>
+  </section>
+
+  <!-- Contact form + map/info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow">Write to the patient desk</p>
+          <h2 class="section-title" style="font-size:2rem">We reply within<br /><em>one working hour.</em></h2>
+          <form id="contact-form" novalidate style="margin-top:1.4rem">
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Full name *</label><input type="text" id="c-name" autocomplete="name" required /></div>
+              <div class="field"><label for="c-email">Email *</label><input type="email" id="c-email" autocomplete="email" required /></div>
+              <div class="field field--full"><label for="c-msg">Message *</label><textarea id="c-msg" rows="5" placeholder="How can we help?"></textarea></div>
+            </div>
+            <p class="form-hint" id="contact-hint" role="status"></p>
+            <button class="btn btn--primary btn--lg" type="submit">Send message</button>
+          </form>
+        </div>
+        <div>
+          <figure class="map-figure" id="map-figure"><!-- map image rendered by js --></figure>
+          <dl class="hours">
+            <div><dt>Outpatient clinics</dt><dd>Mon–Sat · 08:00–20:00</dd></div>
+            <div><dt>Emergency & trauma</dt><dd class="em">Open 24/7</dd></div>
+            <div><dt>Imaging & labs</dt><dd>Daily · 07:00–23:00</dd></div>
+            <div><dt>Pharmacy</dt><dd>Daily · 08:00–24:00</dd></div>
+            <div><dt>Hotline</dt><dd><a href="tel:+18005550911">1-800-555-0911</a></dd></div>
+          </dl>
+          <div class="visit-cards">
+            <div><strong>By metro</strong><span>Portside Line → Harbor Station, 4 min walk</span></div>
+            <div><strong>By car</strong><span>Free 3 h with validation, EV chargers P2</span></div>
+            <div><strong>Ambulance</strong><span>Dispatch in &lt; 90 s on the hotline</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Department quick list -->
+  <section class="section section--mist">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Hospital directory</p><h2 class="section-title">All departments,<br /><em>one click each.</em></h2></div>
+        <a class="btn btn--ghost" href="departments.html">Full directory →</a>
+      </div>
+      <ul class="ins-grid" id="dept-quick"><!-- rendered --></ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <p class="eyebrow">Good to know</p>
+      <h2 class="section-title">Questions,<br /><em>answered honestly.</em></h2>
+      <div class="faq-list" id="faq-list"><!-- rendered --></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Profile — Meridian Health</title>
+  <meta name="description" content="Doctor biography, education, languages and appointment booking at Meridian General Hospital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="doctor">
+<main id="main">
+
+  <!-- Profile hero (rendered by js from ?doc=) -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb" id="crumbs"></nav>
+      <div id="doc-hero"></div>
+    </div>
+  </section>
+
+  <!-- Bio + aside -->
+  <section class="section">
+    <div class="container">
+      <div class="dept-layout">
+        <div id="doc-main"><!-- rendered: biography, education, languages --></div>
+        <aside id="doc-aside"><!-- rendered: colleagues + visit planner CTA --></aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section class="section section--pine visit-band">
+    <div class="container">
+      <h2 class="section-title">Book this doctor.</h2>
+      <p>Same-day slots until noon · free cancellation · instant confirmation.</p>
+      <button class="btn btn--clay btn--lg" data-open-booking>Book an appointment</button>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
